@@ -41,6 +41,8 @@ var (
 	// errStopToken is an internal token indicating interpreter loop termination,
 	// never returned to outside callers.
 	errStopToken = errors.New("stop token")
+	// custom error message
+	ErrInvalidCallerAddress = errors.New("invalid contract caller address,should eoa address")
 )
 
 // ErrStackUnderflow wraps an evm error when the items on the stack less
